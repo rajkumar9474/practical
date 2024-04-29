@@ -10,8 +10,8 @@ int main(){
     scanf("%d",&col);
     int arr[row][col];
     printf("enter the elements of the sparse matrix: \n");
-    for(int i = 0;i<col;i++){
-        for(int j = 0;j<row;j++){
+    for(int i = 0;i<row;i++){
+        for(int j = 0;j<col;j++){
             scanf("%d",&arr[i][j]);
             if(arr[i][j] != 0)
                 count++;
@@ -23,8 +23,8 @@ int main(){
     sprs_arr[0][1] = col;
     sprs_arr[0][2] = count;
 
-    for(int i = 0;i<col;i++){
-        for(int j = 0;j<row;j++){
+    for(int i = 0;i<row;i++){
+        for(int j = 0;j<col;j++){
             if(arr[i][j] != 0){
                 sprs_arr[row_1][0] = i;
                 sprs_arr[row_1][1] = j;
@@ -51,19 +51,22 @@ enter the number row:
 enter the number col:
 4
 enter the elements of the sparse matrix:
-1
+34
+6
+7
 0
-4
-0
-1
-9
-0
-0
+7
+8
+3
+5
 the sparse matrix is:
-2 4 4
-0 0 1
-1 0 4
-2 0 1
-2 1 9
+2 4 7
+0 0 34
+0 1 6
+0 2 7
+1 0 7
+1 1 8
+1 2 3
+1 3 5
 
 */

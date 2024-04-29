@@ -31,22 +31,25 @@ print("the sparse matrix is:")
 print(sprs_arr)
 
 
-# enter the number row:
-# 2
-# enter the number col:
-# 4
-# enter the elements of the sparse matrix:
-# 1
-# 0
-# 4
-# 0
-# 1
-# 9
-# 0
-# 0
-# the sparse matrix is:
-# 2 4 4
-# 0 0 1
-# 1 0 4
-# 2 0 1
-# 2 1 9
+"""
+enter the number row: 2
+enter the number col: 4
+enter the elements of the sparse matrix:
+34
+6
+7
+0
+7
+8
+3
+5
+the sparse matrix is:
+[[ 2  4  7]
+ [ 0  0 34]
+ [ 0  1  6]
+ [ 0  2  7]
+ [ 1  0  7]
+ [ 1  1  8]
+ [ 1  2  3]
+ [ 1  3  5]]
+"""
